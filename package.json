@@ -1,0 +1,23 @@
+{
+  "name": "binetic-primitive-physics",
+  "version": "0.0.1",
+  "description": "BPP-0: formal primitive physics for Binetic state transitions",
+  "type": "module",
+  "main": "src/bpp.mjs",
+  "exports": {
+    ".": "./src/bpp.mjs",
+    "./lower": "./src/lower.mjs"
+  },
+  "scripts": {
+    "test": "node test/conformance.mjs && node test/lowering.mjs",
+    "check": "node --check src/bpp.mjs && node --check src/lower.mjs && node --check test/conformance.mjs && node --check test/lowering.mjs"
+  },
+  "license": "MIT",
+  "keywords": [
+    "binetic",
+    "primitive-physics",
+    "receipts",
+    "state-transition",
+    "verified-compute"
+  ]
+}
